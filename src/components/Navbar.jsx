@@ -1,5 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import { Home, Contact, Projects, About } from '../pages'
 
 const Navbar = () => {
   return (
@@ -14,7 +15,11 @@ const Navbar = () => {
             </NavLink>
             <NavLink to="/projects" className={({isActive}) => 
                 isActive ? 'text-blue-500' : 'text-black'}>
-                About
+                Projects
+            </NavLink>
+            <NavLink to="/contact" className={({isActive}) => 
+                isActive ? 'text-blue-500' : 'text-black'}>
+                Contact
             </NavLink>
         </nav>
     </header>

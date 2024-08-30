@@ -2,10 +2,7 @@ import { useState } from 'react'
 import {Route, BrowserRouter as Router, Routes} from 'react-router-dom'
 import './App.css'
 import Navbar from './components/navbar'
-import Home from './pages/home'
-import About from './pages/About'
-import Projects from './pages/Projects'
-import Contact from './pages/Contact'
+import {Home, About, Projects, Contact} from "./pages/index"
 
 function App() {
   const [count, setCount] = useState(0)
